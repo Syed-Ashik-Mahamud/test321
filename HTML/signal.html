@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Give a signal</title>
+    <link rel="icon" href="../IMG/ignityLogoicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="../CSS/signal.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/footer.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../JavaScript/signal.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Comfortaa';
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="logo">
+        <a href="../index.html"><img class="imgLogo" src="../IMG/ignityLogo.png"></a>
+    </div>
+
+    <div class="navigation-wrapper">
+        <div class="navigation-button">
+            <div class="fa fa-bars"></div>
+        </div>
+        <div class="navigation-menu">
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../HTML/about.html">ABOUT US</a></li>
+                <li><a href="../HTML/vehicles.html">VEHICLES</a></li>
+                <li><a href="../HTML/teams.html">TEAMS</a></li>
+                <li><a href="../HTML/signal.html">GIVE A SIGNAL</a></li>
+                <li><a href="../HTML/login.html">LOGIN</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div id="map"></div>
+        <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWP8S39Y7wW7Lgp2yNh7zV3hQuvbvnipk&callback=initMap">
+        </script>
+        <div class="contact-form">
+            <h1 class="title">Give a Signal</h1>
+            <h2 id="showText" class="subtitle">We are here assist to you.</h2>
+            <form>
+                <input type="tel" id="number" class="textf" name="phone" placeholder="Your Number" />
+                <input type="text" id="adress" class="textf" name="adress" placeholder="Address Of The Accident" />
+                <label for="team" id="carst">Choose a team:</label>
+
+                <select name="cars" id="teams"> 
+                <option value="" disabled selected hidden>Choose a team</option>
+                <option value="Alpha">Alpha</option>
+                <option value="Beta">Beta</option>
+                <option value="Gamma">Gamma</option>
+                </select>
+
+                <div class="checkboxs">
+                    <input type="checkbox" id="vehicle1" name="vehicle1">
+                    <label for="vehicle1" id="shu"> Police</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2">
+                    <label for="vehicle1" id="shu1"> Ambulance</label><br>
+                </div>
+                <br>
+                <button type="button" class="btn-send" onclick="check()">Get a Call Back</button>
+            </form>
+
+        </div>
+    </div>
+
+
+
+    <div class="footermap">
+
+        <footer>
+            <div class="inner_footer">
+                <div class="logo_container">
+                    <a href="../index.html"><img src="../IMG/ignityLogoBlack.png" width="160px" style="float: left; padding-bottom: 14px;opacity: 0.9;"></a>
+
+                    <img src="../IMG/phoneLogo.png" width="28px" class="footerimg imgopacity" alt="phone">
+                    <h4 onclick="openContact()"> Contact us </h4>
+
+                    <img src="../IMG/githubLogo.png" width="28px" class="footerimg imgopacity" alt="github">
+                    <h4 onclick="openGithub()"> Github </h4>
+
+                    <img src="../IMG/placeLogo.png" width="22px" class="footerimg" alt="place">
+                    <h4 onclick="openPlace()"> Find us </h4>
+
+
+                    <img src="../IMG/outlookLogo.png" width="28px" class="footerimg imgopacity" alt="outlook">
+                    <h4 onclick="openOutlook()">Ignity@codingburgas.bg </h4>
+
+                    <img src="../IMG/profilePictureLogo.png" width="28px" class="footerimg imgopacity" alt="profile">
+                    <div class="popup footerimg" onclick="popUpTeam()">Team
+                        <span class="popuptext" id="myPopup">Veselin Stoyanov<br> Mario Berberov<br>Aleks Staykova<br> Georgi Vasilev</bt></span>
+                    </div>
+
+                    <script src="../JavaScript/footer.js"></script>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+    <script src="../JavaScript/navbar.js">
+    </script>
+
+</body>

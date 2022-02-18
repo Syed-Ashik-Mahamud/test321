@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vehicles</title>
+    <link rel="icon" href="../IMG/ignityLogoicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="../CSS/vehicles.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/footer.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Comfortaa';
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigation-wrapper">
+        <div class="navigation-button">
+            <div class="fa fa-bars"></div>
+        </div>
+        <div class="navigation-menu">
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../HTML/about.html">ABOUT US</a></li>
+                <li><a href="../HTML/vehicles.html">VEHICLES</a></li>
+                <li><a href="../HTML/teams.html">TEAMS</a></li>
+                <li><a href="../HTML/signal.html">GIVE A SIGNAL</a></li>
+                <li><a href="../HTML/login.html">LOGIN</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="darker">
+        <div class="pagetitle">
+            <p> The best equipped vehicles </p>
+            <p class="minititle">Highest quality, best equipment, certified firefighters only professional work the best for you</p>
+            <a href="#Vehicle1" class="button" style="vertical-align:middle"><span>See them </span></a>
+        </div>
+    </div>
+    <div class="introduction">
+        <div class="info">
+            <p>Fire trucks are usually painted in red. Modern fire trucks can perform a variety of rescue operations and have many uses. In addition to stairs on a hydraulic platform, they are equipped with axes, chainsaws, ventilation, floodlights, ramps,
+                hoses, self-contained breathing apparatus and other tools. A very important part is the sound and visual warning equipment such as sirens, horns, flashing lights and two-way radio. Some fire trucks have a water tank, while others use fire
+                hydrants and drain water with hoses.
+        </div>
+    </div>
+
+    <div class="contain" id="Vehicle1">
+        <h1 class="carname">SCANIA R500</h1>
+        <div class="margin"><img src="../IMG/vehicle1.jpg" alt="Avatar" class="image">
+        </div>
+
+        <div class="overlay">
+            <div class="textcount">
+                <div class="text">Max Power: 500 hp<br>Displacement: 16000 CC<br>Fuel Tank: 500 Ltr
+                    <br>Transmission: Semi-Automatic<br>Max Speed: 80 km/h<br>Vehicle Weight: 49000 kg<br>Payload: 39270 kg
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contain contain2">
+        <h1 class="carname">SCANIA P360</h1>
+        <div class="margin">
+            <img src="../IMG/vehicle2.jpg" alt="Avatar" class="image">
+        </div>
+        <div class="overlay">
+            <div class="text text2">Max Power: 360 hp<br>Displacement: 13000 CC<br>Fuel Tank: 1000 Ltr
+                <br>Transmission: Semi-Automatic<br>Max Speed: 60 km/h<br>Vehicle Weight: 40200 kg<br>Payload: 32715 kg
+            </div>
+        </div>
+    </div>
+
+    <div class="contain contain3">
+        <h1 class="carname">SCANIA P410</h1>
+        <div class="margin">
+            <img src="../IMG/vehicle3.jpg" alt="Avatar" class="image">
+        </div>
+        <div class="overlay">
+            <div class="text text3">Max Power: 410 hp<br>Displacement: 14500 CC<br>Fuel Tank: 600 Ltr
+                <br>Transmission: Manual<br>Max Speed: 100 km/h<br>Vehicle Weight: 44000 kg<br>Payload: 35590 kg
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-relative">
+
+        <footer>
+            <div class="inner_footer">
+                <div class="logo_container">
+                    <a href="../index.html"><img src="../IMG/ignityLogo.png" width="160px" style="float: left;"></a>
+
+                    <img src="../IMG/phoneLogo.png" width="28px" class="footerimg imgopacity" alt="phone">
+                    <h4 onclick="openContact()"> Contact us </h4>
+
+                    <img src="../IMG/githubLogo.png" width="28px" class="footerimg imgopacity" alt="github">
+                    <h4 onclick="openGithub()"> Github </h4>
+
+                    <img src="../IMG/placeLogo.png" width="22px" class="footerimg" alt="place">
+                    <h4 onclick="openPlace()"> Find us </h4>
+
+
+                    <img src="../IMG/outlookLogo.png" width="28px" class="footerimg imgopacity" alt="outlook">
+                    <h4 onclick="openOutlook()">
+                        Ignity@codingburgas.bg
+                    </h4>
+
+                    <img src="../IMG/profilePictureLogo.png" width="28px" class="footerimg imgopacity" alt="profile">
+                    <div class="popup footerimg" onclick="popUpTeam()">Team
+                        <span class="popuptext" id="myPopup">Veselin Stoyanov<br> Mario Berberov<br>Aleks Staykova<br> Georgi Vasilev</bt></span>
+                    </div>
+
+                    <script src="../JavaScript/footer.js"></script>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+    <script src="../JavaScript/navbar.js">
+    </script>
+</body>

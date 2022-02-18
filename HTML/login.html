@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="icon" href="../IMG/ignityLogoicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="../CSS/login.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/footer.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../JavaScript/login.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Comfortaa';
+            font-size: 14px;
+        }
+    </style>
+</head>
+<title>Log in</title>
+
+<body>
+
+    <div class="logo">
+        <a href="../index.html"><img class="imgLogo" src="../IMG/ignityLogo.png"></a>
+        </a>
+    </div>
+    <div class="navigation-wrapper">
+        <div class="navigation-button">
+            <div class="fa fa-bars"></div>
+        </div>
+        <div class="navigation-menu">
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../HTML/about.html">ABOUT US</a></li>
+                <li><a href="../HTML/vehicles.html">VEHICLES</a></li>
+                <li><a href="../HTML/teams.html">TEAMS</a></li>
+                <li><a href="../HTML/signal.html">GIVE A SIGNAL</a></li>
+                <li><a href="../HTML/login.html">LOGIN</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <form class="formBox">
+
+        <img src="../IMG/profilePictureLogo.png" width="100px" id="loginlogo">
+        <div class="inner_Box">
+
+            <input type="text" name="name" placeholder="Username" class="username" id="user" onfocus="onFocus(this)" onblur="onBlurUser()"><br>
+            <span id="errorMessage1"></span>
+            <input type="password" name="password" placeholder="Password" class="password" id="pass" onfocus="onFocus(this)" onblur="onBlurPass()">
+            <img src="../IMG/view.png" onclick="hideAndShow()" id="view"><br>
+            <span id="errorMessage2"></span>
+            <div class="check">
+                <input type="checkbox" id="agreement" name="privacy" value="agreement">
+                <label for="privacy" id="privacy"> I agree with privacy policy</label><br>
+                <button class="submit" type="button" onclick="check()">Log in</button>
+            </div>
+
+        </div>
+    </form>
+
+
+    <div class="footerlogin">
+
+        <footer>
+            <div class="inner_footer">
+                <div class="logo_container">
+                    <a href="../index.html"><img src="../IMG/ignityLogoBlack.png" width="160px" style="float: left; padding-bottom: 15px; opacity: 0.9;"></a>
+
+                    <img src="../IMG/phoneLogo.png" width="28px" class="footerimg imgopacity" alt="phone">
+                    <h4 onclick="openContact()"> Contact us </h4>
+
+                    <img src="../IMG/githubLogo.png" width="28px" class="footerimg imgopacity" alt="github">
+                    <h4 onclick="openGithub()"> Github </h4>
+
+                    <img src="../IMG/placeLogo.png" width="22px" class="footerimg" alt="place">
+                    <h4 onclick="openPlace()"> Find us </h4>
+
+
+                    <img src="../IMG/outlookLogo.png" width="28px" class="footerimg imgopacity" alt="outlook">
+                    <h4 onclick="openOutlook()">
+                        Ignity@codingburgas.bg
+                    </h4>
+
+                    <img src="../IMG/profilePictureLogo.png" width="28px" class="footerimg imgopacity" alt="profile">
+                    <div class="popup footerimg" onclick="popUpTeam()">Team
+                        <span class="popuptext" id="myPopup">Veselin Stoyanov<br> Mario Berberov<br>Aleks Staykova<br> Georgi Vasilev</bt></span>
+                    </div>
+
+                    <script src="../JavaScript/footer.js"></script>
+                </div>
+
+            </div>
+        </footer>
+
+        <script src="../JavaScript/navbar.js"></script>
+        </script>
+
+</body>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Teams</title>
+    <link rel="icon" href="../IMG/ignityLogoicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="../CSS/teams.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/footer.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../JavaScript/teams.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Comfortaa';
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="logo">
+        <a href="../index.html"><img class="imgLogo" src="../IMG/ignitylogo.png"></a>
+    </div>
+
+    <div class="navigation-wrapper">
+        <div class="navigation-button">
+            <div class="fa fa-bars"></div>
+        </div>
+        <div class="navigation-menu">
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../HTML/about.html">ABOUT US</a></li>
+                <li><a href="../HTML/vehicles.html">VEHICLES</a></li>
+                <li><a href="../HTML/teams.html">TEAMS</a></li>
+                <li><a href="../HTML/signal.html">GIVE A SIGNAL</a></li>
+                <li><a href="../HTML/login.html">LOGIN</a></li>
+            </ul>
+        </div>
+    </div>
+    <h1 class="teamsTitle"> Our Professional Teams</h1>
+    <div class="teamAlpha" onmouseover="betaHover()" onmouseout="teamOut()">
+        <div class="innerAlpha">
+            <div class="cardtitle">
+                <h1 class="teamsHeader">Team Beta</h1>
+            </div>
+            <img src="../IMG/vehicle2.jpg" width="80%" class="cardvehicle">
+            <h3 class="minititle">Members</h3>
+            <ul>
+                <li class="members" id="mike" onmouseover="mikePopUpInfo()" onmouseout="mikePopOutInfo()">Mike Gilies</li>
+                <li class="members" id="christian" onmouseover="christianPopUpInfo()" onmouseout="christianPopOutInfo()">Christian Dornan</li>
+                <li class="members" id="daniel" onmouseover="danielPopUpInfo()" onmouseout="danielPopOutInfo()">Daniel Grey</li>
+                <li class="members" id="james" onmouseover="jamesPopUpInfo()" onmouseout="jamesPopOutInfo()">James Washington</li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="teamBeta" onmouseover="alphaHover()" onmouseout="teamOut()">
+        <div class="innerBeta">
+            <div class="cardtitle cardtitle2">
+                <h1 class="teamsHeader">Team Alpha</h1>
+            </div>
+            <img src="../IMG/vehicle1.jpg" width="80%" class="cardvehicle cardvehicle1">
+            <h3 class="minititle2">Members</h3>
+            <ul>
+                <li class="members" id="jamie" onmouseover="jamiePopUpInfo()" onmouseout="jamiePopOutInfo()">Jamie Robertson</li>
+                <li class="members" id="ralph" onmouseover="ralphPopUpInfo()" onmouseout="ralphPopOutInfo()">Ralph Badgley</li>
+                <li class="members" id="alejandro" onmouseover="alejandroPopUpInfo()" onmouseout="alejandroPopOutInfo()">Alejandro Rodriguez</li>
+                <li class="members" id="jay" onmouseover="jayPopUpInfo()" onmouseout="jayPopOutInfo()">Jay Delgado</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="teamGamma" onmouseover="gammaHover()" onmouseout="teamOut()">
+        <div class="innerGamma">
+            <div class="cardtitle cardtitle3">
+                <h1 class="teamsHeader">Team Gamma</h1>
+
+            </div>
+            <img src="../IMG/vehicle3.jpg" width="80%" class="cardvehicle">
+            <h3 class="minititle3">Members</h3>
+            <ul>
+                <li class="members" id="manny" onmouseover="mannyPopUpInfo()" onmouseout="mannyPopOutInfo()">Manny Vergara</li>
+                <li class="members" id="phil" onmouseover="philPopUpInfo()" onmouseout="philPopOutInfo()">Phil Humphrey</li>
+                <li class="members" id="aleksander" onmouseover="aleksanderPopUpInfo()" onmouseout="aleksanderPopOutInfo()">Aleksander Kokoshin</li>
+                <li class="members" id="roberto" onmouseover="robertoPopUpInfo()" onmouseout="robertoPopOutInfo()">Roberto Delgado</li>
+            </ul>
+        </div>
+    </div>
+    <p class="inform" id="info">Each team <b>Alpha</b>, <b>Beta</b> and <b>Gamma</b> contains four firefighters.</p>
+    <div class="footer-relative">
+
+        <footer>
+            <div class="inner_footer">
+                <div class="logo_container">
+                    <a href="../index.html"><img src="../IMG/ignityLogo.png" width="160px" style="float: left;"></a>
+
+                    <img src="../IMG/phoneLogo.png" width="28px" class="footerimg imgopacity" alt="phone">
+                    <h4 onclick="openContact()"> Contact us </h4>
+
+                    <img src="../IMG/githubLogo.png" width="28px" class="footerimg imgopacity" alt="github">
+                    <h4 onclick="openGithub()"> Github </h4>
+
+                    <img src="../IMG/placeLogo.png" width="22px" class="footerimg" alt="place">
+                    <h4 onclick="openPlace()"> Find us </h4>
+
+
+                    <img src="../IMG/outlookLogo.png" width="28px" class="footerimg imgopacity" alt="outlook">
+                    <h4 onclick="openOutlook()">
+                        Ignity@codingburgas.bg
+                    </h4>
+
+                    <img src="../IMG/profilePictureLogo.png" width="28px" class="footerimg imgopacity" alt="profile">
+                    <div class="popup footerimg" onclick="popUpTeam()">Team
+                        <span class="popuptext" id="myPopup">Veselin Stoyanov<br> Mario Berberov<br>Aleks Staykova<br> Georgi Vasilev</bt></span>
+                    </div>
+
+                    <script src="../JavaScript/footer.js"></script>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+    <script src="../JavaScript/navbar.js">
+    </script>
+</body>
