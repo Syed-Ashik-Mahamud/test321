@@ -1,0 +1,112 @@
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    background: linear-gradient(to left, rgb(255, 137, 26) 0%, rgb(221, 43, 20) 100%);
+}
+
+.container {
+    height: 550px;
+    margin: 2% auto;
+    box-shadow: 0px 0px 10px #000000b2;
+    position: relative;
+    background-color: #cfcfcfe3;
+}
+
+#map {
+    position: relative;
+    height: 90%;
+    width: 53%;
+    float: left;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.contact-form {
+    width: 45%;
+    padding-left: 6%;
+    float: right;
+}
+
+#carst {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.radios {
+    margin-top: 10px;
+    margin-left: -137px;
+}
+
+.footermap {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 10px;
+    color: rgb(26, 26, 26);
+    padding-bottom: 0px;
+    background-color: #cfcfcfe3;
+    z-index: 0;
+    align-items: center;
+}
+
+.title {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-top: 16%;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+input,
+textarea {
+    width: 50%;
+    padding: 3%;
+    margin: 2% 2%;
+    border: 1px solid rgb(255, 137, 26);
+    ;
+}
+
+.textf {
+    margin-top: 2%;
+}
+
+.checkboxs {
+    padding-top: 20px;
+    margin-left: -136px;
+}
+
+#teams {
+    border-color: black;
+}
+
+.btn-send {
+    width: 170px;
+    height: 50px;
+    font-weight: 70;
+    margin: 2% 2%;
+    border: none;
+    color: rgb(228, 228, 228);
+    background: linear-gradient(to left, rgb(255, 137, 26) 0%, rgb(221, 43, 20) 100%);
+    border-radius: 50px;
+    outline: none;
+}
+
+#shu {
+    margin-left: -135px;
+}
+
+#shu1 {
+    margin-left: -135px;
+}
+
+.imgLogo {
+    position: static;
+    display: inline-block;
+    margin-left: 6%;
+    padding-top: 2%;
+    width: 150px;
+    z-index: -1;
+}
